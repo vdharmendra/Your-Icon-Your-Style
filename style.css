@@ -58,3 +58,9 @@ body{
 .lists .list:hover:after{
     top: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .lists{
+        flex-direction: column;
+    }
+}
