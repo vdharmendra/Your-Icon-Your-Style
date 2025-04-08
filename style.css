@@ -1,0 +1,60 @@
+/* RESET DEFA.listsT CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff6464, #7fb0fff5);
+}
+.lists{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%, -50%)
+}
+.lists .list{
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+    overflow: hidden;
+    font-size: 50px;
+    border-radius: 50%;
+    transform: rotate(45deg); 
+}
+.lists .list:before{
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1a5ab4;
+}
+.lists .list i.fa{
+    transform: rotate(-45deg);
+    color: #fff;
+}
+.lists .list:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background:#0D47A1;
+    transition: .5s ease-in-out;
+   z-index: -3;
+}
+.lists .list:hover:after{
+    top: 0;
+}
